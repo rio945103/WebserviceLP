@@ -1,0 +1,57 @@
+.drawer-icon__bar {
+    // position: absolute;
+    // top: 0;
+    // left: 0;
+    width: 21px;
+    height: 3px;
+    border-radius: 6px;
+    background: #64629D;
+    // transition: transform 0.3s linear, top 0.3s linear;
+  
+    &:nth-of-type(1) {
+    }
+  
+    &:nth-of-type(2) {
+    //   top: 9px;
+
+    }
+  
+    &:nth-of-type(3) {
+    //   top: 18px;
+    }
+  }
+
+.mv__image {
+    img {
+        width: 305px;
+        height: 305px;
+    }
+}
+
+.feature__item {
+    img {
+        width: 280px;
+        height: 280px;
+    }
+}
+
+.user__item {
+    img {
+        width: 75px;
+        height: 59.507px;
+    }
+}
+
+.flow__item-image {
+    img {
+        width: 198.919px;
+        height: 148.019px;
+    }
+}
+
+.footer__sns-image {
+    img {
+        width: 24px;
+        height: 24px;
+    }
+}

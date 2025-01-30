@@ -1,0 +1,57 @@
+$font-family-ja: "Noto Sans JP", sans-serif;
+
+$text-size-base: 14px;
+
+$text-color-black: #1a1a1a;
+$text-color-white: #FFFFFF;
+
+body {
+  color: $text-color-black;
+  font-family: $font-family-ja;
+  font-size: $text-size-base;
+}
+
+.mv {
+  background: #EDECFC;
+}
+
+.feature {
+  background: #F9F9F9;
+}
+
+.feature__item-card {
+  border-radius: 16px;
+  background: #FFF;
+
+}
+
+.trial {
+  background: #2D2D32;
+}
+
+.flow {
+  background: #F9F9F9;
+}
+
+.flow__item-image {
+  border-radius: 30px;
+  background: #EDECFC;
+}
+
+.question {
+  background: #F9F9F9;
+}
+
+.question__item-q {
+  border-radius: 4px;
+  background: #64629D;
+}
+
+.question__item-a {
+  border-radius: 4px;
+  background: #FFF;
+}
+
+footer {
+  background: #000;
+}

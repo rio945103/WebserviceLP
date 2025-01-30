@@ -1,0 +1,37 @@
+.footer__inner {
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.footer__sns-image  {
+    display: flex;
+    justify-content: center;
+    margin-top: 12px;
+    gap: 18px;
+}
+
+.footer__nav {
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.footer__copy {
+    color: #FFF;
+    font-family: "Noto Sans JP";
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 10px; /* 100% */
+    letter-spacing: 0.3px;
+}
+
+.copy1 {
+    margin-top: 28px;
+}
+
+.copy2 {
+    margin-top: 10px;
+}

@@ -1,0 +1,254 @@
+doctype html
+html(lang="ja")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(name="robots", content="noindex")
+        title Web Service
+        link(rel="stylesheet", href="./assets/css/style.css")
+        link(rel="stylesheet", href="./assets/css/reset.css")
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+    
+    body
+        header
+            .header__inner
+                
+                h1.header__title Ravek
+                nav.header__nav
+                    a.header__link(href="#about") 特長
+                    a.header__link(href="#how-to-use") 導入実績
+                    a.header__link(href="#merit") 導入までの流れ
+                    a.header__link(href="#merit") 料金プラン
+                    a.header__button.button(href="#contact") 無料でRavekを使ってみる
+                button#js-drawer-icon.header__open.drawer-icon
+                    span.drawer-icon__bar
+                    span.drawer-icon__bar
+                    span.drawer-icon__bar
+
+
+
+        div#js-drawer-content.drawer-content
+            nav.drawer-content__menu
+                a.drawer-content__link(href="#about") 特長
+                a.drawer-content__link(href="#how-to-use") 導入実績
+                a.drawer-content__link(href="#merit") 導入までの流れ
+                a.drawer-content__link(href="#merit") 料金プラン
+            div.drawer-content__button
+                a.button(href="#contact") 無料でRavekを使ってみる
+                a.button--type2(href="#contact") 資料をダウンロードする
+
+
+        .mv
+            .mv__inner
+                h2.mv__title 
+                    |タスク管理は
+                    br
+                    |時間をかけず、高速に。
+                p.mv__text Ravek（レイベック）は複数人のプロジェクトにおけるタスク管理を簡単かつ高速にし、生産性を向上させるツールです。
+                .mv__image
+                    img(src="./assets/img/mv.png", alt="")
+                .mv__buttons 
+                    a.mv__button1.button(href="#contact") まずは無料で使ってみる
+                    a.mv__button2.button--type2(href="#contact") 資料をダウンロードする
+
+        .what
+            .what__inner 
+                h3.what__title1.title1 What is Ravek?
+                h2.what__title2.title2
+                    |タスク管理の時間を
+                    br
+                    |削減するツール
+                .what__text
+                    |Ravek（レイベック）は、
+                    br
+                    |複数人が関わるプロジェクトでのタスク管理を簡単かつ高速にするツールです。
+                    br
+                    br
+                    |タスクの登録や進捗管理の手間を減らし、わ
+                    br
+                    |かりやすく見える化することで
+                    br
+                    |タスク管理にかかる時間を極限まで減らし、
+                    br
+                    |本質的な業務に時間を使いましょう。
+                .what__button.button 無料でRavekを使ってみる
+        
+        .feature
+            .feature__inner 
+                h3.feature__title1.title1 Feature
+                h2.feature__title2.title2
+                    |Ravekの3つの特長
+                .feature__items
+                    .feature__item
+                        img(src="./assets/img/feature1.png", alt="")
+                        .feature__item-card
+                            p.feature__item-number.number 01
+                            h3.feature__item-title 
+                                |タスクの種類・進捗を
+                                br
+                                |ダッシュボードで確認可能
+                            p.feature__item-text Ravekはメンバーが入力したタスクを整理し、ダッシュボードにガントチャートとして表示。ダッシュボードを確認するだけで、誰のどのタスクがどの程度進んでいるのかを一目で把握できます。
+                    .feature__item
+                        img(src="./assets/img/feature2.png", alt="")
+                        .feature__item-card
+                            p.feature__item-number.number 02
+                            h3.feature__item-title 
+                                |タスクの入力がシンプルかつ簡単。
+                                br
+                                |入力の手間が最小限に
+                            p.feature__item-text タスク管理ツールで面倒になりがちなタスクの入力作業。RavekはPC・スマートフォンのどちらでもシンプルかつ簡単に入力でき、手間が最小限に抑えられます。本質的な業務に時間を割きましょう。
+                    .feature__item
+                        img(src="./assets/img/feature3.png", alt="")
+                        .feature__item-card
+                            p.feature__item-number.number 03
+                            h3.feature__item-title 
+                                |SlackとのAPI連携
+                                br
+                                |ツール切り替えの手間を削減
+                            p.feature__item-text RavekはSlackと連携することで、Slack上でRavekをタスクを追加したり、確認したりできます。都度の切り替えの手間がなくなり、シームレスに扱えるのが特長です。Slackを導入しているなら違和感なく使用できます。
+    
+        .trial 
+            .trial__inner 
+                .trial__text 
+                    |14日間の無料トライアル可能。
+                    br
+                    |Ravekで快適なタスク管理を体験しよう
+                .trial__button.button 無料でRavekを使ってみる
+
+        .user 
+            .user__inner 
+                h3.user__title1.title1 Users
+                h2.user__title2.title2 導入実績
+                    .user__items 
+                        .user__item 
+                            img(src="./assets/img/user1.png", alt="")
+                        .user__item 
+                            img(src="./assets/img/user1.png", alt="")
+                        .user__item 
+                            img(src="./assets/img/user1.png", alt="")
+                        .user__item 
+                            img(src="./assets/img/user1.png", alt="")
+                        .user__item 
+                            img(src="./assets/img/user1.png", alt="")
+                        .user__item 
+                            img(src="./assets/img/user1.png", alt="")
+                        .user__item 
+                            img(src="./assets/img/user1.png", alt="")
+                        .user__item 
+                            img(src="./assets/img/user1.png", alt="")
+
+        .flow 
+            .flow__inner 
+                h3.flow__title1.title1 Flow
+                h2.flow__title2.title2 導入までの流れ
+                .flow__items 
+                    .flow__item
+                        .flow__item-number.number 01 
+                        .flow__item-image
+                            img(src="./assets/img/flow1.png", alt="")
+                        .flow__item-card 
+                            h3.flow__item-title 無料トライアルを開始
+                            p.flow__item-text まずはRavekの使用感をお試しください。最初の14日間は無料でご使用いただけます。
+                    .flow__item
+                        .flow__item-number.number 02 
+                        .flow__item-image
+                            img(src="./assets/img/flow2.png", alt="")
+                        .flow__item-card 
+                            h3.flow__item-title 本格導入をサポート
+                            p.flow__item-text Ravekを気に入っていただけましたら、適したプランで導入ください。導入にお困りの際は、メール、またはチャットにてサポートいたします。
+                    .flow__item
+                        .flow__item-number.number 03 
+                        .flow__item-image
+                            img(src="./assets/img/flow3.png", alt="")
+                        .flow__item-card 
+                            h3.flow__item-title 全プロジェクトへ展開
+                            p.flow__item-text Ravekは段階的な導入がおすすめです。主要プロジェクトでの運用に慣れたら、全プロジェクトへ展開を行いましょう。
+
+        .trial 
+            .trial__inner 
+                .trial__text 
+                    |14日間の無料トライアル可能。
+                    br
+                    |Ravekで快適なタスク管理を体験しよう
+                .trial__button.button 無料でRavekを使ってみる
+
+        .price
+            .price__inner 
+                h3.price__title1.title1 Price
+                h2.price__title2.title2 料金プラン
+                .price__items 
+                    
+
+        .question 
+            .question__inner 
+                h3.question__title1.title1 Question
+                h2.question__title2.title2 よくある質問
+                .question__items 
+                    .question__item
+                        .question__item-q 
+                            .question__item-initial-q Q 
+                            .question__item-text-q Ravekはユーザー1人あたりの課金制なのですか？
+                        .question__item-a 
+                            .question__item-initial-a A 
+                            .question__item-text-a 
+                                |いえ、Ravekは１アカウント開設いただくと、そのプランに応じたユーザー数の分だけ、使用できます。
+                                br
+                                |もしプランのデフォルトユーザー数を超えて利用されたい場合は、お問い合わせください。
+                    .question__item
+                        .question__item-q 
+                            .question__item-initial-q Q 
+                            .question__item-text-q Ravekはユーザー1人あたりの課金制なのですか？
+                        .question__item-a 
+                            .question__item-initial-a A 
+                            .question__item-text-a 
+                                |いえ、Ravekは１アカウント開設いただくと、そのプランに応じたユーザー数の分だけ、使用できます。
+                                br
+                                |もしプランのデフォルトユーザー数を超えて利用されたい場合は、お問い合わせください。
+                    .question__item
+                        .question__item-q 
+                            .question__item-initial-q  Q 
+                            .question__item-text-q  Ravekはユーザー1人あたりの課金制なのですか？
+                        .question__item-a 
+                            .question__item-initial-a A 
+                            .question__item-text-a 
+                                |いえ、Ravekは１アカウント開設いただくと、そのプランに応じたユーザー数の分だけ、使用できます。
+                                br
+                                |もしプランのデフォルトユーザー数を超えて利用されたい場合は、お問い合わせください。
+                    .question__item
+                        .question__item-q 
+                            .question__item-initial-q  Q 
+                            .question__item-text-q  Ravekはユーザー1人あたりの課金制なのですか？
+                        .question__item-a 
+                            .question__item-initial-a A 
+                            .question__item-text-a 
+                                |いえ、Ravekは１アカウント開設いただくと、そのプランに応じたユーザー数の分だけ、使用できます。
+                                br
+                                |もしプランのデフォルトユーザー数を超えて利用されたい場合は、お問い合わせください。
+                        
+        .trial 
+            .trial__inner 
+                .trial__text 
+                    |14日間の無料トライアル可能。
+                    br
+                    |Ravekで快適なタスク管理を体験しよう
+                .trial__button.button 無料でRavekを使ってみる
+        footer 
+            .footer__inner 
+                .footer__sns Share on SNS
+                .footer__sns-image 
+                    img(src="./assets/img/twitter.png", alt="Twitter")
+                    img(src="./assets/img/instagram.png", alt="Facebook")
+                    img(src="./assets/img/facebook.png", alt="Instagram")
+                .footer__nav 
+                    a.footer__link-company(href="#about") Ravek
+                    a.footer__link(href="#how-to-use") 会社概要
+                    a.footer__link(href="#merit") プライバシーポリシー
+                    a.footer__link(href="#merit") 利用規約
+                    a.footer__link(href="#merit") お問い合わせ
+                .footer__copy.copy1
+                    |© Ravek Inc. 2021
+                .footer__copy.copy2
+                    |Illustration by FreepikStoryset
+                    
