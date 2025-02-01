@@ -1,9 +1,22 @@
 @use "../foundation/mixin" as *;
 
 .header__inner {
-    padding: 14px 20px;
+  padding: 14px 20px;
+  @include mq(pc){
     display: flex;
-    justify-content: space-between;
+    align-items: center; // ✅ 上下中央揃え
+    justify-content: center; // ✅ 左右中央揃え
+    height: 100px; // ✅ ヘッダーの高さを適宜指定
+    width: 100%;
+
+  }
+}
+
+.header__title {
+  @include mq(pc){
+    margin-left: 100px;
+
+  }
 }
 
 .header__nav {
@@ -11,7 +24,10 @@
     @include mq(pc) {
       display: flex;
       align-items: center;
-      gap: 40px;
+      gap: 14px;
+      flex-grow: 1; // ✅ これを追加
+      justify-content: flex-end; // ✅ これを追加 (右寄せ)
+      margin-right: 133px;
     }
   }
 

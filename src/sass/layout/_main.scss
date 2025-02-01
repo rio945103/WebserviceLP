@@ -1,22 +1,41 @@
+@use "../foundation/mixin" as *;
+
 .mv__inner {
     padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+
+    @include mq(pc){
+        display: flex;
+        flex-direction: row;
+    }
 }
 
 .mv__title {
-    
+    order: 1;
 }
 
 .mv__text {
+    order: 2;
     margin-top: 16px;
 }
 
 .mv__image {
-
+    order: 3;
+    @include mq(pc){
+        order: 4;
+    }
 }
 
 .mv__buttons {
+    order: 4;
     display: block;
     gap: 16px;
+
+    @include mq(pc){
+        order: 3;
+    }
+
 }
 
 .mv__button2 {
