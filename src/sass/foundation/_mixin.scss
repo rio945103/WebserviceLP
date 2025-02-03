@@ -17,4 +17,10 @@ $breakpoints: (
     @include mq(pc) {
       display: none;
     }
+}
+
+.hidden-sp {
+    @include mq(sp) {
+      display: none;
   }
+}

@@ -43,16 +43,20 @@ html(lang="ja")
 
         .mv
             .mv__inner
-                h2.mv__title 
-                    |タスク管理は
-                    br
-                    |時間をかけず、高速に。
-                p.mv__text Ravek（レイベック）は複数人のプロジェクトにおけるタスク管理を簡単かつ高速にし、生産性を向上させるツールです。
-                .mv__buttons 
-                    a.mv__button1.button(href="#contact") まずは無料で使ってみる
-                    a.mv__button2.button--type2(href="#contact") 資料をダウンロードする
-                .mv__image
-                    img(src="./assets/img/mv.png", alt="")
+                .mv__items
+                    h2.mv__title 
+                        |タスク管理は
+                        br
+                        |時間をかけず、高速に。
+                    p.mv__text Ravek（レイベック）は複数人のプロジェクトにおけるタスク管理を簡単かつ高速にし、生産性を向上させるツールです。
+                    .mv__image.hidden-pc
+                        img(src="./assets/img/mv.png", alt="")
+                    .mv__buttons 
+                        a.mv__button1.button(href="#contact") まずは無料で使ってみる
+                        a.mv__button2.button--type2(href="#contact") 資料をダウンロードする
+                .mv__image-pc.hidden-sp
+                    img(src="./assets/img/mv__pc.png", alt="")
+               
 
         .what
             .what__inner 

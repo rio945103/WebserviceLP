@@ -212,6 +212,11 @@ a {
 	order: 3;
 }
 
+.mv__image-pc img {
+	max-height: 515px;
+	max-width: 515px;
+}
+
 .mv__buttons {
 	display: block;
 	gap: 16px;
@@ -645,16 +650,43 @@ a {
 }
 
 .mv__inner {
+	align-items: center;
 	display: flex;
 	flex-direction: row;
+	padding: 33px 133px 32px 120px;
 }
 
-.mv__image {
-	order: 4;
+.mv__text {
+	margin-top: 24px;
+	max-width: 600px;
 }
 
 .mv__buttons {
-	order: 3;
+	align-items: center;
+	display: flex;
+	gap: 37px;
+	margin-top: 33px;
+}
+
+.mv__button2 {
+	margin-top: 0;
+}
+
+.mv__title {
+	font-size: 60px;
+	line-height: normal;
+}
+
+.mv__text {
+	font-size: 18px;
+}
+
+}
+
+@media screen and (max-width: 767px) {
+
+.hidden-sp {
+	display: none;
 }
 
 }

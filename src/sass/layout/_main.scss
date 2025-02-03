@@ -6,24 +6,37 @@
     flex-direction: column;
 
     @include mq(pc){
+        padding: 33px 133px 32px 120px;
         display: flex;
         flex-direction: row;
+        align-items: center;
     }
 }
 
+
+
 .mv__title {
     order: 1;
+    
 }
 
 .mv__text {
     order: 2;
     margin-top: 16px;
+    @include mq(pc){
+        max-width: 600px;
+        margin-top: 24px;
+    }
 }
 
 .mv__image {
     order: 3;
-    @include mq(pc){
-        order: 4;
+}
+
+.mv__image-pc {
+    img {
+        max-width: 515px;
+        max-height: 515px;
     }
 }
 
@@ -33,7 +46,10 @@
     gap: 16px;
 
     @include mq(pc){
-        order: 3;
+        display: flex;
+        align-items: center;
+        margin-top: 33px;
+        gap: 37px;
     }
 
 }
@@ -41,6 +57,9 @@
 .mv__button2 {
     display: block;
     margin-top: 32px;
+    @include mq(pc){
+        margin-top: 0;
+    }
 }
 
 .what__inner  {
