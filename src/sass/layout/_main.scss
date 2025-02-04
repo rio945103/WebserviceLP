@@ -4,6 +4,7 @@
     padding: 60px 20px;
     display: flex;
     flex-direction: column;
+    
 
     @include mq(pc){
         padding: 33px 133px 32px 120px;
@@ -64,6 +65,7 @@
 
 .what__inner  {
     padding: 80px 20px 60px;
+    text-align: center;
 }
 
 .title2 {
@@ -76,15 +78,53 @@
 
 .what__button {
     margin-top: 24px;
+
+    @include mq(pc){
+        margin-top: 40px;
+        
+    }
 }
 
 .feature__inner {
     padding-top: 60px;
     padding-bottom: 60px;
+   
 }
 
 .feature__title2 {
     margin-top: 12px;
+}
+
+.feature__items {
+    margin-top: 245px;
+    display: flex;
+    flex-direction: column;
+    gap: 258px;
+}
+
+.feature__item {
+    position: relative;
+    
+    @include mq(pc){
+        
+        
+    }
+}
+
+.feature__item-image {
+    position: absolute;
+    top: -218px;
+    margin-left: 48px;
+    margin-right: 47px;
+}
+
+.feature__item-card {
+    padding: 40px 20px;
+
+    @include mq(pc){
+        display: flex;
+        padding: 65px 120px 64px 40px;
+    }
 }
 
 .feature__item-text {
@@ -93,6 +133,7 @@
 
 .trial__inner {
     padding: 40px 20px;
+    text-align: center;
 }
 
 .trial__button {
@@ -123,6 +164,12 @@
 
 .flow__item {
     margin-top: 60px;
+    position: relative;
+}
+
+.flow__item-number {
+    position: absolute;
+    top: -24px;
 }
 
 .flow__item-image {

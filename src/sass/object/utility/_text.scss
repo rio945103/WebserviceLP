@@ -53,6 +53,11 @@
     font-style: normal;
     font-weight: 700;
     line-height: 22px; /* 100% */
+
+    @include mq(pc){
+        font-size: 36px;
+        line-height: normal;
+    }
 }
 
 .title2 {
@@ -64,6 +69,12 @@
     font-weight: 700;
     line-height: 42px; /* 140% */
     letter-spacing: 1.5px;
+
+    @include mq(pc){
+        font-size: 48px;
+        line-height: 48px; /* 100% */
+        letter-spacing: 2.4px;
+    }
 }
 
 .what__text {
@@ -74,6 +85,11 @@
     font-style: normal;
     font-weight: 400;
     line-height: 25.6px; /* 160% */
+
+    @include mq(pc){
+        font-size: 18px;
+        line-height: 32.4px;
+    }
 }
 
 

@@ -30,7 +30,14 @@
     }
 }
 
-.feature__item {
+.feature__item-card {
+    @include mq(pc){
+        width: 742px;
+        height: 366px;
+    }
+}
+
+.feature__item-image {
     img {
         width: 280px;
         height: 280px;
