@@ -88,6 +88,10 @@
 .feature__inner {
     padding-top: 60px;
     padding-bottom: 60px;
+
+    @include mq(pc){
+        padding-inline: 120px;
+    }
    
 }
 
@@ -100,14 +104,25 @@
     display: flex;
     flex-direction: column;
     gap: 258px;
+
+    @include mq(pc){
+        margin-top: 256px;
+        gap: 263px;
+
+    }
 }
 
 .feature__item {
     position: relative;
     
     @include mq(pc){
-        
-        
+
+    }
+    .is-reverse & {
+        @include mq(pc){
+            left: 0;
+            right: auto;
+        }
     }
 }
 
@@ -116,6 +131,11 @@
     top: -218px;
     margin-left: 48px;
     margin-right: 47px;
+
+    @include mq(pc){
+        right: 0px;
+        bottom: 0px;
+    }
 }
 
 .feature__item-card {
@@ -123,7 +143,14 @@
 
     @include mq(pc){
         display: flex;
-        padding: 65px 120px 64px 40px;
+        padding: 65px 19px 64px 40px;
+        gap: 18px;
+    }
+
+    .feature__item.is-reverse & {
+        @include mq(pc) {
+            flex-direction: row-reverse; // ✅ 画像を左、テキストを右に変更
+        }
     }
 }
 
@@ -134,15 +161,25 @@
 .trial__inner {
     padding: 40px 20px;
     text-align: center;
+
+    @include mq(pc){
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
 }
 
 .trial__button {
     margin-top: 24px;
+
+    @include mq(pc){
+        margin-top: 32px;
+    }
 }
 
 .user__inner  {
     padding-top: 60px;
     padding-bottom: 60px;
+    text-align: center;
 }
 
 .user__items {
@@ -150,33 +187,61 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 12px 5.5px;
+
+    @include mq(pc){
+        
+    }
 }
 
 .flow__inner {
     padding-top: 60px;
     padding-bottom: 59px;
     padding-inline: 20px;
+
+    @include mq(pc){
+        padding-right: 178px;
+        padding-left: 192px;
+        padding-top: 100px;
+        padding-bottom: 80px;
+    }
 }
 
 .flow__items {
     margin-top: 40px;
+
+    @include mq(pc){
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 44px;
+    }
 }
 
 .flow__item {
     margin-top: 60px;
     position: relative;
+    
 }
 
 .flow__item-number {
     position: absolute;
     top: -24px;
+
+    @include mq(pc){
+        top: -30px;
+        left: -20px;
+    }
 }
 
 .flow__item-image {
     text-align: center;
     padding-top: 26px;
     padding-bottom: 23px;
+
+    
 }
+
+
 
 .flow__item-title {
     margin-top: 16px;
@@ -184,12 +249,158 @@
 
 .flow__item-text {
     margin-top: 8px;
+
+    @include mq(pc){
+        width: 280px;
+    }
 }
+
+.flow__polygon {
+    img {
+        width: 29px;
+        height: 64px;
+    }
+}
+
+.price__content {
+    margin-top: 68px;
+}
+
+.price__table {
+    width: 620px;
+  table-layout: fixed;
+  border-collapse: collapse;
+  margin-right: auto;
+  margin-left: auto;
+
+  @include mq(pc) {
+    width: 1020px;
+  }
+
+
+th,td {
+    text-align: center;
+    height: 60px;
+    vertical-align: middle;
+
+    @include mq(pc) {
+      height: 100px;
+    }
+
+    &:nth-child(1) {
+      width: 130px;
+
+      @include mq(pc) {
+        width: 250px;
+      }
+    }
+
+    &:nth-child(2) {
+      width: 90px;
+      font-size: 16px;
+
+      @include mq(pc) {
+        width: 250px;
+        font-size: 25px;
+        letter-spacing: 0.75px;
+      }
+
+      img {
+        width: 70px;
+
+        @include mq(pc) {
+          width: 123px;
+        }
+      }
+    }
+  }
+
+  th {
+    letter-spacing: 0.48px;
+
+    @include mq(pc) {
+      font-size: 20px;
+      letter-spacing: 0.6px;
+    }
+  }
+
+  td {
+    font-size: 14px;
+    letter-spacing: 0.42px;
+
+    @include mq(pc) {
+      font-size: 16px;
+      letter-spacing: 0.48px;
+    }
+  }
+
+  thead {
+    th {
+      letter-spacing: 1.6px;
+
+      @include mq(pc) {
+        color: #FFF;
+        text-align: center;
+        font-family: "Noto Sans JP";
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        background: #2D2D32;
+        width: 260px;
+        height: 286px;
+
+        &:nth-child(1){
+            background: #FFF;
+        }
+
+        &:nth-child(3) {
+            height: 286px;
+            background: #64629D;
+            box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.60);
+        }
+      }
+    }
+  }
+
+  tbody {
+    tr {
+        &:nth-child(1)  {
+            background: #EDECFC;
+        }
+        &:nth-child(3)  {
+            background: #EDECFC;
+        }
+        &:nth-child(5)  {
+            background: #EDECFC;
+        }
+        &:nth-child(7)  {
+            background: #EDECFC;
+        }
+
+      
+    }
+
+    th,
+    td {
+      height: 60px;
+      
+
+    }
+  }
+}
+
+
 
 .question__inner {
     padding-top: 60px;
     padding-bottom: 36px;
     padding-inline: 20px;
+
+    @include mq(pc){
+        padding-right: 259px;
+        padding-left: 261px;
+    }
 }
 
 .question__items {
@@ -200,6 +411,10 @@
     padding: 10px 10px 8px 15px;
     display: flex;
     gap: 15px;
+
+    @include mq(pc){
+        padding: 20px 457px 20px 24px;
+    }
 }
 
 .question__item-a {
@@ -208,4 +423,8 @@
     gap: 15px;
     margin-top: 16px;
     margin-bottom: 24px;
+
+    @include mq(pc){
+        padding: 20px 25px 20px 25px;
+    }
 }

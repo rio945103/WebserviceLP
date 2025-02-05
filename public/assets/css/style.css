@@ -292,6 +292,7 @@ a {
 .user__inner {
 	padding-bottom: 60px;
 	padding-top: 60px;
+	text-align: center;
 }
 
 .user__items {
@@ -333,6 +334,80 @@ a {
 
 .flow__item-text {
 	margin-top: 8px;
+}
+
+.flow__polygon img {
+	height: 64px;
+	width: 29px;
+}
+
+.price__content {
+	margin-top: 68px;
+}
+
+.price__table {
+	border-collapse: collapse;
+	margin-left: auto;
+	margin-right: auto;
+	table-layout: fixed;
+	width: 620px;
+}
+
+.price__table th,
+.price__table td {
+	height: 60px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.price__table th:nth-child(1),
+.price__table td:nth-child(1) {
+	width: 130px;
+}
+
+.price__table th:nth-child(2),
+.price__table td:nth-child(2) {
+	font-size: 16px;
+	width: 90px;
+}
+
+.price__table th:nth-child(2) img,
+.price__table td:nth-child(2) img {
+	width: 70px;
+}
+
+.price__table th {
+	letter-spacing: 0.48px;
+}
+
+.price__table td {
+	font-size: 14px;
+	letter-spacing: 0.42px;
+}
+
+.price__table thead th {
+	letter-spacing: 1.6px;
+}
+
+.price__table tbody tr:nth-child(1) {
+	background: #EDECFC;
+}
+
+.price__table tbody tr:nth-child(3) {
+	background: #EDECFC;
+}
+
+.price__table tbody tr:nth-child(5) {
+	background: #EDECFC;
+}
+
+.price__table tbody tr:nth-child(7) {
+	background: #EDECFC;
+}
+
+.price__table tbody th,
+.price__table tbody td {
+	height: 60px;
 }
 
 .question__inner {
@@ -378,27 +453,29 @@ a {
 }
 
 .button {
+	align-items: center;
 	background: #64629D;
 	border: 2px solid currentColor;
 	border-radius: 29px;
 	box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.24);
 	color: #fff;
+	display: flex;
 	display: inline-block;
 	font-size: 16px;
 	font-weight: 700;
 	height: 58px;
 	letter-spacing: 0.48px;
-	line-height: 1.7;
+	line-height: 36px;
 	min-width: 150px;
 	padding: 8px 28px;
-	text-align: center;
 	text-align: center;
 	transition: background-color 0.3s, color 0.3s;
 	width: 300px;
 }
 
 .button:hover {
-	background-color: #fabe00;
+	background: #FFF;
+	color: #64629D;
 }
 
 .button--type2 {
@@ -409,14 +486,15 @@ a {
 	color: #64629D;
 	font-weight: 700;
 	height: 58px;
+	line-height: 36px;
 	padding: 8px 28px;
 	text-align: center;
 	width: 300px;
 }
 
 .button--type2:hover {
-	background-color: #fff;
-	color: #111;
+	background-color: #64629D;
+	color: #fff;
 }
 
 .drawer-icon__bar {
@@ -558,6 +636,15 @@ a {
 	text-align: center;
 }
 
+.flow__item-number {
+	color: #64629D;
+	font-family: Futura;
+	font-size: 48px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+}
+
 .flow__item-title {
 	color: #2D2D32;
 	font-family: "Noto Sans JP";
@@ -613,7 +700,7 @@ a {
 	line-height: 25.6px; /* 160% */
 }
 
-.footer__sns {
+.footer__sns-title {
 	color: #FFF;
 	font-family: Futura;
 	font-size: 18px;
@@ -656,6 +743,49 @@ a {
 
 .hidden-pc {
 	display: none;
+}
+
+.flow__item-image {
+	height: 191px;
+	width: 280px;
+}
+
+.question__item-q {
+	border-radius: 10px;
+}
+
+.question__item-a {
+	border-radius: 10px;
+}
+
+.footer__inner {
+	padding-left: 120px;
+	padding-right: 133px;
+	-moz-text-align-last: left;
+	text-align-last: left;
+}
+
+.footer__contents {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-between;
+}
+
+.footer__links {
+	display: flex;
+	gap: 14px;
+}
+
+.footer__copys {
+	display: flex;
+}
+
+.copy1 {
+	margin-top: 0;
+}
+
+.copy2 {
+	margin-top: 0;
 }
 
 .header__inner {
@@ -706,14 +836,168 @@ a {
 	margin-top: 40px;
 }
 
+.feature__inner {
+	padding-inline: 120px;
+}
+
+.feature__items {
+	gap: 263px;
+	margin-top: 256px;
+}
+
+.is-reverse .feature__item {
+	left: 0;
+	right: auto;
+}
+
+.feature__item-image {
+	bottom: 0px;
+	right: 0px;
+}
+
 .feature__item-card {
 	display: flex;
-	padding: 65px 120px 64px 40px;
+	gap: 18px;
+	padding: 65px 19px 64px 40px;
+}
+
+.feature__item.is-reverse .feature__item-card {
+	flex-direction: row-reverse;
+}
+
+.trial__inner {
+	padding-bottom: 60px;
+	padding-top: 60px;
+}
+
+.trial__button {
+	margin-top: 32px;
+}
+
+.flow__inner {
+	padding-bottom: 80px;
+	padding-left: 192px;
+	padding-right: 178px;
+	padding-top: 100px;
+}
+
+.flow__items {
+	align-items: center;
+	display: flex;
+	gap: 44px;
+	justify-content: space-between;
+}
+
+.flow__item-number {
+	left: -20px;
+	top: -30px;
+}
+
+.flow__item-text {
+	width: 280px;
+}
+
+.price__table {
+	width: 1020px;
+}
+
+.price__table th,
+.price__table td {
+	height: 100px;
+}
+
+.price__table th:nth-child(1),
+.price__table td:nth-child(1) {
+	width: 250px;
+}
+
+.price__table th:nth-child(2),
+.price__table td:nth-child(2) {
+	font-size: 25px;
+	letter-spacing: 0.75px;
+	width: 250px;
+}
+
+.price__table th:nth-child(2) img,
+.price__table td:nth-child(2) img {
+	width: 123px;
+}
+
+.price__table th {
+	font-size: 20px;
+	letter-spacing: 0.6px;
+}
+
+.price__table td {
+	font-size: 16px;
+	letter-spacing: 0.48px;
+}
+
+.price__table thead th {
+	background: #2D2D32;
+	color: #FFF;
+	font-family: "Noto Sans JP";
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 700;
+	height: 286px;
+	line-height: normal;
+	text-align: center;
+	width: 260px;
+}
+
+.price__table thead th:nth-child(1) {
+	background: #FFF;
+}
+
+.price__table thead th:nth-child(3) {
+	background: #64629D;
+	box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.6);
+	height: 286px;
+}
+
+.question__inner {
+	padding-left: 261px;
+	padding-right: 259px;
+}
+
+.question__item-q {
+	padding: 20px 457px 20px 24px;
+}
+
+.question__item-a {
+	padding: 20px 25px 20px 25px;
+}
+
+.button {
+	border-radius: 50px;
+	font-size: 24px;
+	height: 70px;
+	line-height: 50px;
+	width: 400px;
+}
+
+.button--type2 {
+	border-radius: 50px;
+	font-size: 24px;
+	height: 70px;
+	line-height: 50px;
+	width: 400px;
 }
 
 .feature__item-card {
 	height: 366px;
 	width: 742px;
+}
+
+.feature__item-image img {
+	height: 520px;
+	width: 520px;
+}
+
+.user__item img {
+	height: 169px;
+	width: 213px;
 }
 
 .mv__title {
@@ -739,6 +1023,35 @@ a {
 .what__text {
 	font-size: 18px;
 	line-height: 32.4px;
+}
+
+.number {
+	font-size: 72px;
+	line-height: normal;
+}
+
+.feature__item-title {
+	font-size: 36px;
+	line-height: normal;
+}
+
+.feature__item-text {
+	font-size: 16px;
+	line-height: 28.8px; /* 180% */
+}
+
+.trial__text {
+	font-size: 36px;
+	letter-spacing: 0.72px;
+	line-height: normal;
+}
+
+.question__item-text-q {
+	font-size: 18px;
+}
+
+.question__item-text-a {
+	font-size: 18px;
 }
 
 }

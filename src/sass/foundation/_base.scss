@@ -1,3 +1,5 @@
+@use "../foundation/mixin" as *;
+
 $font-family-ja: "Noto Sans JP", sans-serif;
 
 $text-size-base: 14px;
@@ -36,6 +38,10 @@ body {
 .flow__item-image {
   border-radius: 30px;
   background: #EDECFC;
+  @include mq(pc){
+    width: 280px;
+    height: 191px;
+  }
 }
 
 .question {
@@ -45,11 +51,19 @@ body {
 .question__item-q {
   border-radius: 4px;
   background: #64629D;
+
+  @include mq(pc){
+    border-radius: 10px;
+  }
 }
 
 .question__item-a {
   border-radius: 4px;
   background: #FFF;
+
+  @include mq(pc){
+    border-radius: 10px;
+  }
 }
 
 footer {

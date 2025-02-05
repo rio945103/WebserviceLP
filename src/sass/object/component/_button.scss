@@ -1,3 +1,5 @@
+@use "../../foundation/mixin" as *;
+
 .drawer-icon__bar {
     // position: absolute;
     // top: 0;
@@ -24,6 +26,8 @@
   }
   
 .button {
+    display: flex;
+    align-items: center;
     font-weight: 700;
     letter-spacing: 0.48px;
     display: inline-block;
@@ -32,7 +36,7 @@
     border: 2px solid currentColor;
     background: #64629D;
     font-size: 16px;
-    line-height: 1.7;
+    line-height: 36px;
     color: #fff;
     min-width: 150px;
     text-align: center;
@@ -40,10 +44,18 @@
     box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.24);
     width: 300px;
     height: 58px;
-    text-align: center;
+
+    @include mq(pc){
+      width: 400px;
+      height: 70px;
+      font-size: 24px;
+      border-radius: 50px;
+      line-height: 50px;
+    }
   
     &:hover {
-      background-color: #fabe00;
+      background: #FFF;
+      color: #64629D;
     }
   
     &--type2 {
@@ -57,10 +69,19 @@
         width: 300px;
         height: 58px;
         text-align: center;
+        line-height: 36px;
+
+        @include mq(pc){
+          width: 400px;
+          height: 70px;
+          font-size: 24px;
+          border-radius: 50px;
+          line-height: 50px;
+        }
   
       &:hover {
-        background-color: #fff;
-        color: #111;
+        background-color:  #64629D;
+        color: #fff;
       }
     }
 }

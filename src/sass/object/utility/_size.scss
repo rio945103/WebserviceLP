@@ -41,6 +41,11 @@
     img {
         width: 280px;
         height: 280px;
+
+        @include mq(pc){
+            width: 520px;
+            height: 520px;
+        }
     }
 }
 
@@ -48,6 +53,11 @@
     img {
         width: 75px;
         height: 59.507px;
+
+        @include mq(pc){
+            width: 213px;
+            height: 169px;
+        }
     }
 }
 

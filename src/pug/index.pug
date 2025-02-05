@@ -97,10 +97,10 @@ html(lang="ja")
                                     br
                                     |ダッシュボードで確認可能
                                 p.feature__item-text Ravekはメンバーが入力したタスクを整理し、ダッシュボードにガントチャートとして表示。ダッシュボードを確認するだけで、誰のどのタスクがどの程度進んでいるのかを一目で把握できます。
-                    .feature__item
+                    .feature__item.is-reverse 
                         .feature__item-image
                             img(src="./assets/img/feature2.png", alt="")
-                        .feature__item-card
+                        .feature__item-card.is-reverse
                             p.feature__item-number.number 02
                             .feature__item-contents
                                 h3.feature__item-title 
@@ -156,28 +156,32 @@ html(lang="ja")
                 h2.flow__title2.title2 導入までの流れ
                 .flow__items 
                     .flow__item
-                        .flow__item-number.number 01 
+                        .flow__item-number 01 
                         .flow__item-image
                             img(src="./assets/img/flow1.png", alt="")
                         .flow__item-card 
                             h3.flow__item-title 無料トライアルを開始
                             p.flow__item-text まずはRavekの使用感をお試しください。最初の14日間は無料でご使用いただけます。
+                    .flow__polygon 
+                        img(src="./assets/img/polygon-1.png", alt="")
                     .flow__item
-                        .flow__item-number.number 02 
+                        .flow__item-number 02 
                         .flow__item-image
                             img(src="./assets/img/flow2.png", alt="")
                         .flow__item-card 
                             h3.flow__item-title 本格導入をサポート
                             p.flow__item-text Ravekを気に入っていただけましたら、適したプランで導入ください。導入にお困りの際は、メール、またはチャットにてサポートいたします。
+                    .flow__polygon 
+                        img(src="./assets/img/polygon-1.png", alt="")
                     .flow__item
-                        .flow__item-number.number 03 
+                        .flow__item-number 03 
                         .flow__item-image
                             img(src="./assets/img/flow3.png", alt="")
                         .flow__item-card 
                             h3.flow__item-title 全プロジェクトへ展開
                             p.flow__item-text Ravekは段階的な導入がおすすめです。主要プロジェクトでの運用に慣れたら、全プロジェクトへ展開を行いましょう。
 
-        .trial 
+        .trial
             .trial__inner 
                 .trial__text 
                     |14日間の無料トライアル可能。
@@ -189,8 +193,51 @@ html(lang="ja")
             .price__inner 
                 h3.price__title1.title1 Price
                 h2.price__title2.title2 料金プラン
-                .price__items 
-                    
+                .price__content
+                    table.price__table
+                        thead 
+                            tr
+                                th
+                                th ライト<br><br>月額 1,980 円
+                                th ベーシック<br><br>月額 2,980 円
+                                th プレミアム<br><br>月額 4,980 円
+                        tbody
+                            tr 
+                                th プロジェクト数
+                                td ５
+                                td 15
+                                td 15
+                            tr 
+                                th メンバー数
+                                td 10
+                                td 30
+                                td 30
+                            tr 
+                                th ストレージ(容量)
+                                td 25GB
+                                td 50GB
+                                td 100GB
+                            tr 
+                                th 2段階認証
+                                td 
+                                td 〇
+                                td 〇
+                            tr 
+                                th IP制限
+                                td 
+                                td
+                                td 〇
+                            tr 
+                                th メールサポート
+                                td 〇
+                                td 〇
+                                td 〇
+                            tr 
+                                th チャットサポート
+                                td 〇
+                                td 〇
+                                td 〇
+                       
 
         .question 
             .question__inner 
@@ -247,19 +294,23 @@ html(lang="ja")
                 .trial__button.button 無料でRavekを使ってみる
         footer 
             .footer__inner 
-                .footer__sns Share on SNS
-                .footer__sns-image 
-                    img(src="./assets/img/twitter.png", alt="Twitter")
-                    img(src="./assets/img/instagram.png", alt="Facebook")
-                    img(src="./assets/img/facebook.png", alt="Instagram")
-                .footer__nav 
-                    a.footer__link-company(href="#about") Ravek
-                    a.footer__link(href="#how-to-use") 会社概要
-                    a.footer__link(href="#merit") プライバシーポリシー
-                    a.footer__link(href="#merit") 利用規約
-                    a.footer__link(href="#merit") お問い合わせ
-                .footer__copy.copy1
-                    |© Ravek Inc. 2021
-                .footer__copy.copy2
-                    |Illustration by FreepikStoryset
-                    
+                .footer__contents
+                    .footer__sns
+                        .footer__sns-title Share on SNS
+                        .footer__sns-image 
+                            img(src="./assets/img/twitter.png", alt="Twitter")
+                            img(src="./assets/img/instagram.png", alt="Facebook")
+                            img(src="./assets/img/facebook.png", alt="Instagram")
+                    .footer__nav 
+                        a.footer__link-company(href="#about") Ravek
+                        .footer__links
+                            a.footer__link(href="#how-to-use") 会社概要
+                            a.footer__link(href="#merit") プライバシーポリシー
+                            a.footer__link(href="#merit") 利用規約
+                            a.footer__link(href="#merit") お問い合わせ
+                        .footer__copys
+                            .footer__copy.copy1
+                                |© Ravek Inc. 2021
+                            .footer__copy.copy2
+                                |Illustration by FreepikStoryset
+                        

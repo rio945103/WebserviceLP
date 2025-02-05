@@ -4,6 +4,20 @@
     text-align: center;
     padding-top: 40px;
     padding-bottom: 40px;
+    @include mq(pc){
+        padding-left: 120px;
+        padding-right: 133px;
+        text-align-last: left;
+    }
+}
+
+.footer__contents {
+    @include mq(pc){
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        
+    }
 }
 
 .footer__sns-image  {
@@ -18,6 +32,23 @@
     display: flex;
     flex-direction: column;
     gap: 14px;
+
+   
+}
+
+.footer__links {
+    @include mq(pc){
+        display: flex;
+        gap: 14px;
+    }
+}
+
+.footer__copys {
+    @include mq(pc){
+        display: flex;
+
+    }
+
 }
 
 .footer__copy {
@@ -32,8 +63,16 @@
 
 .copy1 {
     margin-top: 28px;
+
+    @include mq(pc){
+        margin-top: 0;
+    }
 }
 
 .copy2 {
     margin-top: 10px;
+
+    @include mq(pc){
+        margin-top: 0;
+    }
 }
