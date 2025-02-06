@@ -70,6 +70,10 @@
 
 .title2 {
     margin-top: 12px;
+
+    @include mq(pc){
+        margin-top: 6px;
+    }
 }
 
 .what__text {
@@ -193,6 +197,8 @@
     }
 }
 
+
+
 .flow__inner {
     padding-top: 60px;
     padding-bottom: 59px;
@@ -262,12 +268,23 @@
     }
 }
 
+.price__inner {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-inline: 20px;
+
+    @include mq(pc){
+       padding-top: 100px;
+       padding-bottom: 69px;
+    }
+}
+
 .price__content {
     margin-top: 68px;
 }
 
 .price__table {
-    width: 620px;
+width: 620px;
   table-layout: fixed;
   border-collapse: collapse;
   margin-right: auto;
@@ -297,7 +314,7 @@ th,td {
 
     &:nth-child(2) {
       width: 90px;
-      font-size: 16px;
+      font-size: 18px;
 
       @include mq(pc) {
         width: 250px;

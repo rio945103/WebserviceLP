@@ -341,6 +341,12 @@ a {
 	width: 29px;
 }
 
+.price__inner {
+	padding-bottom: 60px;
+	padding-inline: 20px;
+	padding-top: 60px;
+}
+
 .price__content {
 	margin-top: 68px;
 }
@@ -367,7 +373,7 @@ a {
 
 .price__table th:nth-child(2),
 .price__table td:nth-child(2) {
-	font-size: 16px;
+	font-size: 18px;
 	width: 90px;
 }
 
@@ -832,6 +838,10 @@ a {
 	margin-top: 0;
 }
 
+.title2 {
+	margin-top: 6px;
+}
+
 .what__button {
 	margin-top: 40px;
 }
@@ -895,6 +905,11 @@ a {
 
 .flow__item-text {
 	width: 280px;
+}
+
+.price__inner {
+	padding-bottom: 69px;
+	padding-top: 100px;
 }
 
 .price__table {
