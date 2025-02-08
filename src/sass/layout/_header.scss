@@ -20,7 +20,7 @@
 }
 
 .header__nav {
-    display: none;
+  display: none;
     @include mq(pc) {
       display: flex;
       align-items: center;
@@ -29,7 +29,17 @@
       justify-content: flex-end; // ✅ これを追加 (右寄せ)
       margin-right: 133px;
     }
+}
+
+.header__button {
+  @include mq(pc){
+    width: 180px;
+    height: 40px;
+    text-align: center;
+    font-size: 16px
+    line-height: 16px; /* 100% */
   }
+}
 
 .drawer-content {
     position: fixed;

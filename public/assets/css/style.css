@@ -223,9 +223,16 @@ a {
 	order: 4;
 }
 
+.mv__button1 {
+	height: 58px;
+	width: 300px;
+}
+
 .mv__button2 {
 	display: block;
+	height: 58px;
 	margin-top: 32px;
+	width: 300px;
 }
 
 .what__inner {
@@ -371,14 +378,14 @@ a {
 	width: 130px;
 }
 
-.price__table th:nth-child(2),
-.price__table td:nth-child(2) {
+.price__table th:nth-child(3),
+.price__table td:nth-child(3) {
 	font-size: 18px;
 	width: 90px;
 }
 
-.price__table th:nth-child(2) img,
-.price__table td:nth-child(2) img {
+.price__table th:nth-child(3) img,
+.price__table td:nth-child(3) img {
 	width: 70px;
 }
 
@@ -461,7 +468,6 @@ a {
 .button {
 	align-items: center;
 	background: #64629D;
-	border: 2px solid currentColor;
 	border-radius: 29px;
 	box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.24);
 	color: #fff;
@@ -469,14 +475,12 @@ a {
 	display: inline-block;
 	font-size: 16px;
 	font-weight: 700;
-	height: 58px;
 	letter-spacing: 0.48px;
 	line-height: 36px;
 	min-width: 150px;
-	padding: 8px 28px;
+	padding: 12px 26px;
 	text-align: center;
 	transition: background-color 0.3s, color 0.3s;
-	width: 300px;
 }
 
 .button:hover {
@@ -491,11 +495,9 @@ a {
 	box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.24);
 	color: #64629D;
 	font-weight: 700;
-	height: 58px;
 	line-height: 36px;
-	padding: 8px 28px;
+	padding: 10px 24px;
 	text-align: center;
-	width: 300px;
 }
 
 .button--type2:hover {
@@ -815,6 +817,13 @@ a {
 	margin-right: 133px;
 }
 
+.header__button {
+	font-size: 16px;
+	height: 40px;
+	text-align: center;
+	width: 180px;
+}
+
 .mv__inner {
 	align-items: center;
 	display: flex;
@@ -834,8 +843,15 @@ a {
 	margin-top: 33px;
 }
 
+.mv__button1 {
+	height: 54px;
+	width: 250px;
+}
+
 .mv__button2 {
+	height: 54px;
 	margin-top: 0;
+	width: 250px;
 }
 
 .title2 {
@@ -926,15 +942,17 @@ a {
 	width: 250px;
 }
 
-.price__table th:nth-child(2),
-.price__table td:nth-child(2) {
-	font-size: 25px;
-	letter-spacing: 0.75px;
+.price__table th:nth-child(3),
+.price__table td:nth-child(3) {
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 18px; /* 75% */
 	width: 250px;
 }
 
-.price__table th:nth-child(2) img,
-.price__table td:nth-child(2) img {
+.price__table th:nth-child(3) img,
+.price__table td:nth-child(3) img {
 	width: 123px;
 }
 
@@ -982,22 +1000,6 @@ a {
 
 .question__item-a {
 	padding: 20px 25px 20px 25px;
-}
-
-.button {
-	border-radius: 50px;
-	font-size: 24px;
-	height: 70px;
-	line-height: 50px;
-	width: 400px;
-}
-
-.button--type2 {
-	border-radius: 50px;
-	font-size: 24px;
-	height: 70px;
-	line-height: 50px;
-	width: 400px;
 }
 
 .feature__item-card {
