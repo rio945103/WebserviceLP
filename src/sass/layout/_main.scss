@@ -58,9 +58,14 @@
 .mv__button1 {
     width: 300px;
     height: 58px;
+    box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.24);
+    border-radius: 29px;
+
     @include mq(pc){
         width: 250px;
-        height: 54px;
+        box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.24);
+        border-radius: 27px;
+        padding: 12px 26px;
     }
 }
 
@@ -69,10 +74,12 @@
     margin-top: 32px;
     width: 300px;
     height: 58px;
+    box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.24);
     @include mq(pc){
         margin-top: 0;
         width: 250px;
-        height: 54px;
+        box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.24);
+        padding: 10px 26px;
     }
 }
 
@@ -95,10 +102,19 @@
 
 .what__button {
     margin-top: 24px;
+    box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.24);
+
 
     @include mq(pc){
         margin-top: 40px;
-        
+        width: 400px;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 24px; /* 100% */
+        padding: 24px 56px;
+        border-radius: 50px;
+        box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.24);
     }
 }
 
@@ -187,9 +203,20 @@
 
 .trial__button {
     margin-top: 24px;
-
+    width: 300px;
+    box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.24);
+    border-radius: 29px;
     @include mq(pc){
         margin-top: 32px;
+        width: 400px;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 24px; /* 100% */
+        letter-spacing: 0.48px;
+        padding: 23px 53px;
+        border-radius: 50px;
+        box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.24);
     }
 }
 
@@ -297,11 +324,11 @@
 }
 
 .price__table {
-width: 620px;
-  table-layout: fixed;
-  border-collapse: collapse;
-  margin-right: auto;
-  margin-left: auto;
+    width: 620px;
+    table-layout: fixed;
+    border-collapse: collapse;
+    margin-right: auto;
+    margin-left: auto;
 
   @include mq(pc) {
     width: 1020px;
@@ -326,11 +353,10 @@ th,td {
     }
 
     &:nth-child(3) {
-      width: 90px;
       font-size: 18px;
 
       @include mq(pc) {
-        width: 250px;
+        width: auto;
         font-size: 24px;
         font-style: normal;
         font-weight: 700;
@@ -380,14 +406,19 @@ th,td {
         line-height: normal;
         background: #2D2D32;
         width: 260px;
-        height: 286px;
+        height: 270px;
+        padding-inline: 13px;
 
         &:nth-child(1){
             background: #FFF;
         }
 
+        &:nth-child(2) {
+           height: 270px;
+        }
+
         &:nth-child(3) {
-            height: 286px;
+            width: 260px;
             background: #64629D;
             box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.60);
         }
@@ -409,6 +440,9 @@ th,td {
         &:nth-child(7)  {
             background: #EDECFC;
         }
+        &:nth-child(8)  {
+            height: 81px;
+        }
 
       
     }
@@ -420,6 +454,30 @@ th,td {
 
     }
   }
+}
+
+.price__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "Noto Sans JP";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18px; /* 100% */
+    padding: 15px 45px;
+    border-radius: 50px;
+    width: 234px;
+    height: 50px;
+}
+
+.price__title-button {
+   margin-top: 28px;
+}
+
+.price__title-button.price__button.button {
+    border: 2px solid #FFF;
 }
 
 
